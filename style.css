@@ -1,46 +1,18 @@
+/* =========================
+   🌌 GLOBAL STYLES
+========================= */
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #050914;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom, #02040a, #08152d);
     color: white;
+    overflow-x: hidden;
 }
 
-.topbar {
-    background: #08152d;
-    color: #4db8ff;
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 20px;
-}
-
-.card {
-    background: #0b1224;
-    border: 1px solid #1f2a44;
-    border-radius: 12px;
-    padding: 15px;
-}
-
-.card:hover {
-    transform: scale(1.02);
-    transition: 0.3s;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.wide {
-    grid-column: span 2;
-}
+/* =========================
+   ⭐ STAR BACKGROUND
+========================= */
 
 .stars {
     position: fixed;
@@ -49,6 +21,139 @@ body {
     background:
         radial-gradient(white 1px, transparent 1px);
     background-size: 50px 50px;
-    opacity: 0.08;
-    z-index: -1;
+    opacity: 0.15;
+    z-index: -2;
+}
+
+.stars::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(#4db8ff 1px, transparent 1px);
+    background-size: 150px 150px;
+    opacity: 0.25;
+}
+
+/* =========================
+   🚀 HEADER
+========================= */
+
+.topbar {
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    background: rgba(8, 21, 45, 0.95);
+
+    border-bottom: 2px solid #4db8ff;
+
+    box-shadow:
+        0 0 20px rgba(77,184,255,0.4);
+}
+
+/* =========================
+   📊 GRID
+========================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 20px;
+    padding: 25px;
+}
+
+/* =========================
+   🛰️ CARDS
+========================= */
+
+.card {
+    background: rgba(11, 18, 36, 0.85);
+
+    border: 1px solid rgba(77,184,255,0.3);
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    backdrop-filter: blur(10px);
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #4db8ff;
+
+    box-shadow:
+        0 0 25px rgba(77,184,255,0.35);
+}
+
+/* =========================
+   📌 CARD TITLES
+========================= */
+
+.card h2 {
+    margin-top: 0;
+
+    color: #4db8ff;
+
+    border-bottom: 1px solid rgba(77,184,255,0.3);
+
+    padding-bottom: 8px;
+}
+
+/* =========================
+   🖼️ IMAGES
+========================= */
+
+.card img {
+    width: 100%;
+
+    border-radius: 12px;
+
+    margin-top: 10px;
+
+    border: 1px solid rgba(77,184,255,0.3);
+}
+
+/* =========================
+   🧠 WIDE SECTIONS
+========================= */
+
+.wide {
+    grid-column: span 2;
+}
+
+/* =========================
+   📋 LISTS
+========================= */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   📱 MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .wide {
+        grid-column: span 1;
+    }
+
+    .topbar {
+        font-size: 22px;
+    }
 }
