@@ -1,70 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Asteroid Orbit Simulation Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="stars"></div>
-
-<div class="topbar">
-    ☄️ ASTEROID ORBIT SIMULATION DASHBOARD
+<div class="card">
+    <h2>🎯 Mission Objective</h2>
+    <p>
+        Simulate and visualize planetary and asteroid orbits using real orbital parameters and Keplerian orbital mechanics.
+    </p>
 </div>
 
-<div class="grid">
-
-    <div class="card">
-        <h2>🎯 Mission Objective</h2>
-        <p>
-            Simulate and visualize asteroid orbits using real orbital parameters.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>☄️ Target Asteroid</h2>
-        <p>1 Ceres</p>
-        <p>Main Belt Asteroid</p>
-    </div>
-
-    <div class="card">
-        <h2>📊 Orbital Parameters</h2>
-        <p>Semi-major Axis: 2.77 AU</p>
-        <p>Eccentricity: 0.08</p>
-        <p>Orbital Period: 4.6 years</p>
-    </div>
-
-    <div class="card">
-        <h2>🌞 Solar System View</h2>
-        <img src="images/solar_system.png" alt="Solar System">
-    </div>
-
-    <div class="card">
-        <h2>☄️ Orbit Simulation</h2>
-        <img src="images/orbit_plot.png" alt="Orbit Plot">
-    </div>
-
-    <div class="card wide">
-        <h2>🧠 Scientific Conclusion</h2>
-        <p>
-            The simulation demonstrates the elliptical orbit of asteroid 1 Ceres
-            around the Sun. Orbital parameters determine the size and shape of
-            the orbit and can be used to predict future positions.
-        </p>
-    </div>
-
-    <div class="card wide">
-        <h2>🚀 Future Work</h2>
-        <ul>
-            <li>Add multiple asteroid comparisons</li>
-            <li>Animate orbital motion</li>
-            <li>Include Earth orbit for scale</li>
-            <li>Analyze Near-Earth Objects (NEOs)</li>
-        </ul>
-    </div>
-
+<div class="card">
+    <h2>☄️ Simulated Objects</h2>
+    <p>🌍 Earth</p>
+    <p>☄️ 4 Vesta</p>
+    <p>☄️ 1 Ceres</p>
 </div>
 
-</body>
-</html>
+<div class="card">
+    <h2>📊 Orbital Parameters</h2>
+    <p><strong>Earth</strong>: 1.00 AU | 1.00 year</p>
+    <p><strong>Vesta</strong>: 2.36 AU | 3.63 years</p>
+    <p><strong>Ceres</strong>: 2.77 AU | 4.61 years</p>
+</div>
+
+<div class="card">
+    <h2>🌞 Solar System View</h2>
+    <img src="images/solar_system.png" alt="Solar System Comparison">
+</div>
+
+<div class="card">
+    <h2>☄️ Orbit Simulation</h2>
+    <img src="images/orbit_plot.png" alt="Orbit Simulation">
+</div>
+
+<div class="card wide">
+    <h2>🧠 Scientific Conclusion</h2>
+    <p>
+        The simulation demonstrates how orbital parameters influence the size, shape,
+        and period of celestial orbits. Earth occupies the inner Solar System,
+        while Vesta and Ceres reside within the Main Asteroid Belt between Mars and Jupiter.
+        Applying Kepler's Third Law shows that larger orbital distances correspond to longer orbital periods.
+    </p>
+</div>
+
+<div class="card wide">
+    <h2>🚀 Future Work</h2>
+    <ul>
+        <li>Animate orbital motion over time</li>
+        <li>Add additional Main Belt asteroids</li>
+        <li>Simulate Near-Earth Objects (NEOs)</li>
+        <li>Calculate closest approaches to Earth</li>
+        <li>Develop an interactive 3D Solar System visualization</li>
+    </ul>
+</div>
